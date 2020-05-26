@@ -1,0 +1,12 @@
+{% extends "app1/base.html" %}
+{% block content %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <h2 class="article-title">{{ object.title }}</h2>
+        </div>
+        <a>Directed by- {{ object.director }}</a>
+        <p class="article-content">{{ object.desc }}</p>
+      </div>
+    </article>
+{% endblock content %}
